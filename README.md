@@ -1,12 +1,18 @@
 Mercury
 =======
 
-El siguiente proyecto de investigación trata de controlar un GoKart a través de inteligencia artificial y distintos métodos aplicados en robótica movil. El vehículo a controlar deberá tener la capacidad de competir con otros vehículos, ya sean humanos o computadores.
+Inspirados en el éxito obtenido por google en el desarrollo de vehículos autónomos y mediante el conocimiento adquirido en el curso de programación llevado en Udacity (Programming a Robotic Car) dictado por el profesor Sebastian Thrun. Hemos decidio aventurarnos a desarrollar el primer vehículo autónomo de la Universidad Católica de Santa María, Arequipa, Perú.
 
-Las tópicos investigados serán:
+Para esto utilizaremos el Go-Kart del programa profesional de Ingeniería Mecánica, Mecánica Eléctrica y Mecatrónica, el cual modificaremos y programaremos hasta conseguir el mejor agente de conducción autónoma inteligente que podamos.
 
-- Localización-----------: En este campo utilizaremos el algoritmo de localización de markov, filtros de particulas y                                metodos de graphSLAM.
-- Medición---------------: Este campo ocupara filtros de Kalman para sensar objetos dínamicos y estáticos.
-- Planeamiento-----------: Se utilizara el agoritmo de búsqueda A* junto con programación dinámica.
-- Control de la dirección: Se aplicara un suavizado de rutas al resutado obtenido en el planeamiento, para que pueda ser                             seguido por la dirección del vehículo. La dirección utilizara un controlador PID sintonizado                              con el algoritmo de Twiddle.
-- SLAM-------------------: Este es un tópico extra en el que se utilizara graph SLAM.
+Los tópicos investigados serán:
+
+* **Localización**: Aplicaremos métodos probabilísticos de localización como "Monte Carlo Localization" y "Particles Filters", para aumentar la presición de posicionamiento entregada por el GPS abordo.
+
+* **Medición**: Este campo ocupara filtros de Kalman para sensar objetos dínamicos y estáticos, los cuales agregaran información del entorno a nuestro agente de conducción.
+
+* **Planeamiento**: Utilizaremos el agoritmo de búsqueda A* junto con programación dinámica para obtener la mejor ruta hacia un destino fijado por orden ingresada u orden pre-programada.
+
+* **Control de la dirección**: Aplicaremos un suavizado de rutas al resutado obtenido en el planeamiento, para que pueda ser utilizado como referencia en la dirección del vehículo. La dirección utilizara un controlador PID sintonizado mediante el algoritmo Twiddle.
+
+* **SLAM**: Este es un tópico extra en el que utilizaremos graph SLAM (dependiendo de la evolución del proyecto, se decidira sobre la inclusión definitiva de esta técnica).
