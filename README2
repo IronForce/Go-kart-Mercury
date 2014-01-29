@@ -1,24 +1,26 @@
 Una vez instalado GIT, debemos configurarlo:
 
-git config --global user.name "Shature"
-git config --global user.email "gustavoagacitua.89@gmail.com"
+* git config --global user.name "usuario"
+* git config --global user.email "correo"
 
 Generando tu Public Key:
 
-ssh-keygen
+* ssh-keygen
 
 Leyendo tu clave para copiarla a Github:
 
-cat SSHKey.pub
+* cat SSHKey.pub
 
 Arrancando tu proyecto:
 
-git init
+* git init
 
 touch README # crea archivo
 
-git add README
+* git add README
 
-git commit -m "tu primer commit"
+* git commit -m "texto o explicativo de los cambios que estas subiendo a gitHUB"
 
-git push origin master / git pull origin master
+push es para enviar archivos y pull para jalar archivos
+
+* git push origin master / git pull origin master
