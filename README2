@@ -2,6 +2,7 @@ Una vez instalado GIT, debemos configurarlo:
 
 * git config --global user.name "usuario"
 * git config --global user.email "correo"
+* git remote add origin "URL de nuestro proyecto en github"
 
 Generando tu Public Key:
 
@@ -24,3 +25,18 @@ touch README # crea archivo
 push es para enviar archivos y pull para jalar archivos
 
 * git push origin master / git pull origin master
+
+si queremos cambiar el origin de git en nuestro equipo, utuilizamos lo siguiente:
+
+git remote -v
+# View existing remotes
+# origin  https://github.com/user/repo.git (fetch)
+# origin  https://github.com/user/repo.git (push)
+
+git remote set-url origin https://github.com/user/repo2.git
+# Change the 'origin' remote's URL
+
+git remote -v
+# Verify new remote URL
+# origin  https://github.com/user/repo2.git (fetch)
+# origin  https://github.com/user/repo2.git (push)
